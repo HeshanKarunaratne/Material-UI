@@ -1,18 +1,11 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
-
-const useStyles = makeStyles({
-  buttonStyles: {
-    color: "red",
-    border: "none",
-  },
-});
+import CoolButton from "./CoolButton";
+import PaperCom from "./PaperCom";
 const App = () => {
-  const classes = useStyles();
   return (
     <div>
-      <Button className={classes.buttonStyles}>Small button</Button>
+      {/* <CoolButton cool={false} /> */}
+      <PaperCom />
     </div>
   );
 };
